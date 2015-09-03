@@ -1,0 +1,31 @@
+User Control:
+login.php v (Post inside)
+logout.php v (Logout and return to login page)
+
+File:							| Post file
+----------------------------------------------------------------------------------------------
+form-tambah-admin.php v					| tambah-admin.php v
+daftar-admin.php v (included in form-tambah-admin.php)	| edit-admin.php v | hapus-admin.php v
+
+
+New Data Control:
+File:							| Post file
+----------------------------------------------------------------------------------------------
+form-tambah-lpj.php	v				| simpan-lpj.php v | hapus-lpj.php v
+
+
+Existing Data Control:
+File:							| Post file
+----------------------------------------------------------------------------------------------
+form-data-utama-lpj.php? v				| edit-data-utama-lpj.php? v
+form-data-lpj-belanja.php? v				| tambah-data-lpj-belanja.php? v | edit-data-lpj-belanja.php? v | hapus-data-lpj-belanja.php? v
+form-data-buku-kas-umum.php? v				| tambah-data-buku-kas-umum.php? v | edit-data-buku-kas-umum.php? v | hapus-data-buku-kas-umum.php? v
+form-data-penandatangan-lpj.php? v			| simpan-data-penandatangan-lpj.php? v
+form-ubah-status-lpj.php? v				| simpan-status-lpj.php? v
+
+View Data:
+File:
+--------------------------------------
+daftar-lpj.php v
+daftar-data-lpj-belanja.php v (included in form-data-lpj-belanja.php)
+daftar-data-buku-kas-umum.php v (included in form-data-buku-kas-umum.php)

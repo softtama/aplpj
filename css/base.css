@@ -1,0 +1,294 @@
+/* ==================================== */
+/* == File   : base.css =============== */
+/* == Updated: June 16, 2014 ========== */
+/* == Origin : Keyners.NL ============= */
+/* == (C) APLPJ. Januar M., Rizki P. == */
+/* ==================================== */
+
+/*
+ * Font setting
+ */
+input[type='file']::-webkit-file-upload-button, body {font-family: "Open Sans", Arial, sans-serif;}
+
+/* 
+ * Body
+ */
+body {margin:0; padding: 0; background: #fff; color: #303030; cursor: default;}
+
+/*
+ * Paragraf
+ */
+p {color: #333; line-height: 22px;}
+
+/*
+ * Link
+ */
+a:link, a:visited {text-decoration: none; color: #1F81B8;}
+a:hover {text-decoration: underline; color: #374FFF;}
+a.ico {display: inline-block; width: 20px; height: 20px; background-size: 20px;}
+a.ico.disabled {opacity: .4;}
+a:hover.ico {opacity: .8;}
+a:hover.ico.disabled {opacity: .4;}
+
+/*
+ * Image
+ */
+img {border: 0; pointer-events: none;}
+
+/*
+ * Headings
+ */
+h1 {font-size: 1.8em; line-height: 1.23em;}
+h2 {font-size: 22px;}
+h3 {font-size: 24px; font-family: 'Open Sans', Georgia, Arial, serif; padding: 10px 0;}
+h4 {font-size: 18px;}
+h4 a {width: inherit; display: block;}
+h5 {font-size: 16px; padding-bottom: 10px;}
+h5 b {font-weight: bold;}
+h6 {font-size: 14px; padding-bottom: 10px; font-weight: bold;}
+
+/*
+ * List
+ */
+ul {font-size: 14px; margin: 7px 0; padding-left: 10px;}
+ul li {margin: 10px 0;}
+
+/*
+ * Table
+ */
+table.table {border: 1px solid #bbb;}
+table.table thead {background: #ddd;}
+table.table.nowrap {white-space: nowrap;}
+table.table.data {margin: 10px 0; display: inline-block; display: -webkit-inline-block;}
+table.table tr, table.table th, table.table td {padding: 5px; border: 1px solid #bbb; vertical-align: middle;}
+ 
+/*
+ * Clearing
+ */
+.container .clear, body .clear, .clear-narrow {width: 100%; float: left; clear: both;}
+.container .clear, body .clear {margin: 20px 0;}
+.clear-narrow {margin: 15px 0;}
+
+/*
+ * Header 
+ */
+header {width: 100%; /*height: 400px;*/ float: left; clear: both; margin: 0; padding: 0; position: relative; z-index: 1;} 
+header nav {width: 100%; float: left; margin: 0; padding: 5px 0; background: #fff; border-top: 2px solid #374FFF; position: relative; z-index: 1;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+}
+header nav.fixed {position: fixed !important; top: 0;}
+header .logo   {float: left; padding: 0; width: 960px; height: 150px;}
+header .menu-nav   {float: left; padding: 10px 0; font-size: 20px;}
+header .searchbox   {float: right; padding: 0; font-size: 20px;}
+header .slogan {float: left; padding: 80px 0;}
+header .slogan a.green {margin: 13px 0; padding: 10px 28px;}
+header p {color: #fff;}
+header h1, header h2, header h4 {width: 100%; float: left; clear: both;  text-align: left; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.2); font-weight: 600;}
+header h1 {font-size: 3em; margin-bottom: 10px;}
+header h2 {font-size: 2em;}
+header h4 {font-weight: normal; margin-bottom: 10px;}
+
+/*
+ * Logo
+ */
+.logo a {display: flex; color: #444; text-decoration: none; line-height: 20px;}
+.logo a:hover {color: #374FFF; opacity: .8;}
+
+/*
+ * Menu
+ */
+nav#main-menu-nav, nav#main-menu-nav .container {background: #303030; height: 40px;}
+nav#account-nav {border-top: none;}
+ul.mainMenu.right {margin: 0; padding: 0; float: right;}
+ul.mainMenu.left {margin: 0; padding: 0;}
+ul.mainMenu li {display: inline; float: left; margin: 2px 0px 2px 5px;}
+ul.mainMenu li a {font-size: 13px; color: #444; text-decoration: none;}
+ul.mainMenu li a:hover {color: #374FFF; text-decoration: underline;}
+.menu-nav.right {float: right;}
+
+/*
+ * Gray
+ */
+.gray {width: 100%; float: left; clear: both; background: #f6f6f6; margin: 50px 0; padding: 45px 0; position:relative; z-index:1;}
+
+/*
+ * Form, input, label, textarea
+ */
+.form h3, .form p {text-align: left;}
+form.form {margin: 20px auto;}
+label {margin: 0; padding: 0;}
+input, textarea, select, .cke {margin: 4px 0 !important; padding: 7px;}
+input#main-searchbox {width: 250px;}
+input, textarea, select {border: 1px solid #ccc; font-family: "Open Sans"; outline: none;}
+input:focus, textarea:focus, select:focus {border-color: #a6a6a6;}
+label {font-size: 14px;}
+textarea {width: 480px; padding: 7px; height: 80px; max-height: 80px;}
+input.error, textarea.error, select.error {border-color: #cc4847;}
+label.error {display: inline; font-size: 13px; margin-left: 10px; margin-bottom: 0;}
+label.error a:link, label.error a:visited {color: #374FFF;}
+
+input[type='reset'], input[type='submit'], input[type='button'], input[type='file']::-webkit-file-upload-button {padding: 6px 12px !important; font-size: 14px !important; border: none !important; background: #374FFF; color: #fff !important; cursor: pointer !important;}
+input[type='submit'].for-form, input[type='button'].for-form {margin-top: 20px !important;}
+input[type='reset']:hover, input[type='submit']:hover, input[type='button']:hover, input[type='file']::-webkit-file-upload-button:hover {background: #428EFF;}
+input[readonly] {border: none; padding: 8px;}
+select#LPJBL-KODERING {max-width: 80%;}
+
+/*
+ * Table
+ */
+table, tr, td {vertical-align: middle; font-size: 14px;}
+
+/*
+ * Focus
+ */
+.focus h3 {margin-bottom: 15px;}
+.focus h4, .focus h3 {float: left; width: 100%; text-align: center; margin-bottom: 7px;}
+.focus p {text-align: center;}
+
+/*
+ * a#top
+ */
+a#top {display: none; padding: 10px; position: fixed; bottom: 50px; right: 60px; z-index: 9; color: #fff; background: #374FFF; font-size: 14px; font-weight: 300; line-height: normal;}
+a#top:hover {background: #428EFF;}
+
+/*
+ * BUTTONS
+ */
+.button {float: left; color: #fff; text-transform: uppercase; text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+
+/*
+ * Footer
+ */
+footer {color: #fff; width: 100%; float: left; margin: 20px 0 0; padding: 20px 0 0 0; background: #333;}
+footer h5 {color: #ccc;}
+footer p {color: #ccc; line-height: 15px; font-size: 12px;}
+footer a:link, footer a:visited {color: #ddd;}
+footer a:hover {color: #374FFF;}
+footer a:hover#top {color: #fff !important; text-decoration: none !important;}
+
+/* 
+ * Additional
+ */
+div.menu-nav ul.mainMenu li a {color: #fff; font-size: 16px; padding: 10px; text-decoration: none;}
+div.menu-nav ul.mainMenu li a:hover {padding: 10px; background: #505050;}
+
+div#main-content.fixed {top: 50px;}
+div.sub-content {float: left; width: 100%; margin-bottom: 30px;}
+div.subtitle {background: #FFFFFF url("../images/res/line-title-blue.png") repeat-x center; width: 100%; height: 26px;}
+div.subtitle .title {float: left; display: inline-block; background: #fff; padding: 0 15px; margin-left: 30px;}
+div.subtitle .see-all {float: right; padding: 0; margin-right: 20px;}
+.see-all a:link, .see-all a:visited {text-decoration: none; padding: 2px 20px; background: #374FFF; color: #fff; display: block;}
+.see-all a:hover {color: #fff; background: #428EFF;}
+
+div.item h4 {word-wrap: break-word; line-height: normal; font-size: 14px;}
+div.item h4, div.item h4 a {min-height: 40px; display: inline-block;}
+div.item p {font-family: 'Crete Round', Georgia, Arial, serif; font-size: 150%; padding: 10px 0;}
+div.item p.item-price {font-family: Georgia, Arial, serif; font-size: 150%; padding: 10px 0 6px; color: #288F22;}
+div.item p.item-price.disc {font-size: 100%; padding: 0 0 4px 0; text-decoration: line-through; height: 22px; color: #D61212;}
+div.item p.item-stock-num, p.item-id-cat-stock {font-family: "Open Sans", Georgia, serif; font-size: 90%; padding: 0 0 6px 0;}
+div.sub-container {display: flex; border: 1px solid #ccc; margin-top: 20px; padding: 10px 4px;}
+div.sub-container.noflex {display: block; border: 1px solid #ccc; margin-top: 20px; padding: 10px;}
+div.sub-container .item {width: 158px; float: left; background: #ddd; margin-left: 10px; padding: 10px;}
+
+div.item-image {width: 156px; height: 150px; background: #ccc; margin-bottom: 10px;}
+div.item-image img {width: 156px; height: 150px;}
+div.item-image.large {width: 200px; height: 190px; margin: 0 0 0 10px;}
+div.item-image.large img {width: 200px; height: 190px;}
+
+div.item-detail-left {width: 480px; margin: 0 20px; display: table; height: 190px;}
+div.item-detail-left h4 {margin-bottom: 10px; line-height: 16pt;}
+div.item-detail-left p.item-desc {font-size: 10pt; line-height: 15pt; text-align: justify;}
+
+div.item-detail-right {width: 210px; text-align: right; border-left: 1px solid #ddd; display: table; height: 190px;}
+div.item-detail-right p.item-price {font-family: Georgia, Arial, serif; font-size: 150%; padding: 4px 0 10px; color: #288F22;}
+div.item-detail-right p.item-price.disc {font-size: 100%; padding: 0 0 8px 0; text-decoration: line-through; height: 22px; color: #D61212;}
+input.more-info {margin-bottom: 0;}
+div.price-info {display: table-row;}
+div.item-control {display: table-cell; vertical-align: bottom;}
+
+span.rating {background-position: 0 0; display: block;}
+span.rating.rating-grey {display:inline-block;position:relative;top:1px;background:url("../images/res/rating-star.png") no-repeat 0px 0px;background-size:65px;height:14px;width:65px;zoom:2;}
+span.rating.rating-value {background: url("../images/res/rating-star.png") no-repeat 0px -15px; background-size: 65px; height:14px; width: 0;}
+
+.sub-footer h5 {text-align: center; border-bottom: 1px solid #fff; margin-bottom: 20px; padding-bottom: 20px;}
+
+div.container.copyright {text-align: center; padding: 20px 0; margin-top: 20px; width: 100%; background: #202020;}
+
+.sub-footer ul li a:link, .sub-footer ul li a:visited {color: #fff;}
+.sub-footer ul li a:hover {text-decoration: none !important; border-bottom: 1px dashed #374FFF; color: #374FFF;}
+
+div.cust-login {width: 450px; padding: 0px 20px; margin: 20px 0px;}
+div.cust-login.login {border-right: 1px solid rgb(204, 204, 204);}
+div.cust-login h4, div.cust-register h4 {margin-bottom: 20px;}
+div.cust-login p, div.cust-register p {font-size: 10pt; line-height: 15pt;}
+div.cust-register {padding: 0px 20px; margin: 20px 0px;}
+
+.separator {border-top: 1px solid #ccc; visibility: visible !important; float: none !important;}
+.separator.sub {margin: 10px 0;}
+
+/*
+ * User Panel
+ */
+.panel {width: 100%; margin: 10px 20px;}
+.panel .panel-row {display: flex;}
+.panel .panel-row.top {margin-bottom: 20px;}
+
+.panel .panel-row .panel-col {width: 290px; display: block; float: left; height: 290px; padding: 0px;}
+.panel .panel-row .panel-col.left {margin-right: 20px;}
+
+.panel-col a:link.panel-link, .panel-col a:visited.panel-link {width: 250px; display: block; height: 250px; padding: 20px; color: #fff;}
+.panel-col a:hover.panel-link {color: #fff !important; text-decoration: none !important;}
+.panel-col .panel-link {text-align: center;}
+.panel-link .panel-image {margin: 10px 0;}
+.panel-link .panel-title {font-size: 20pt; line-height: 24pt;}
+
+.color-1 {background-color: #374FFF;}
+.color-2 {background-color: #F3B900;}
+.color-3 {background-color: #D10404;}
+.color-4 {background-color: #3B5998;}
+.color-5 {background-color: #AD1990;}
+.color-6 {background-color: #303030;}
+
+.color-1:hover {background-color: #428EFF;}
+.color-2:hover {background-color: #F3E900;}
+.color-3:hover {background-color: #FC2626;}
+.color-4:hover {background-color: #4A6EB9;}
+.color-5:hover {background-color: #DA2CB8;}
+.color-6:hover {background-color: #505050;}
+
+/*
+ * CKEditor style
+ */
+.cke {max-width: 314px;}
+
+/*
+ * Error message
+ */
+p.inlinemsg { margin-bottom: 20px; padding: 10px 10px 10px 40px;display: block; border-radius: 6px; border: 1px solid;}
+p.inlinemsg.err { color: red; background: url(../images/res/error.png) 15px 12px no-repeat #eee;}
+p.inlinemsg.suc { color: green; background: url(../images/res/success.png) 15px 12px no-repeat #eee;}
+
+.hidden {display: none; visibility: hidden;}
+
+marquee.welcome {margin: 0 10px;}
+marquee.welcome h3 {color: #199445; width: 200%;}
+
+table.table th,  table.table tr, table.table td {font-size: 100%; line-height: 14pt;}
+
+.h-scrollbar {overflow: auto; overflow-y: hidden;}
+
+/**
+  * Icons
+  */
+.ico-Print {background: url(../images/res/print.png);}
+.ico-Download {background: url(../images/res/download.png);}
+.ico-Delete {background: url(../images/res/delete.png);}
+.ico-Edit {background: url(../images/res/edit.png);}
+.ico-Detail {background: url(../images/res/list.png);}
