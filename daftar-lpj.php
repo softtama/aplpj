@@ -40,17 +40,22 @@ include("functions.php");
 					$i=1;
 					if (isset($_GET['status_lpj'])) {
 						switch ($_GET['status_lpj']) {
-							case '1':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='1' AND AKTIF=TRUE");
+							// case '1':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='1' AND AKTIF=TRUE");
+							case '1':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='1'");
 							break;
-							case '2':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='2' AND AKTIF=TRUE");
+							// case '2':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='2' AND AKTIF=TRUE");
+							case '2':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='2'");
 							break;
-							case '3':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='3' AND AKTIF=TRUE");
+							// case '3':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='3' AND AKTIF=TRUE");
+							case '3':	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE LPJ_STATUS='3'");
 							break;
-							default:	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE AKTIF=TRUE");
+							// default:	$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE AKTIF=TRUE");
+							default:	$data = mysql_query("SELECT * FROM TB_DATA_LPJ");
 							break;
 						}
 					} else {
-						$data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE AKTIF=TRUE");
+						// $data = mysql_query("SELECT * FROM TB_DATA_LPJ WHERE AKTIF=TRUE");
+						$data = mysql_query("SELECT * FROM TB_DATA_LPJ");
 					}
 					
 					while ($tr = mysql_fetch_array($data)) { 
